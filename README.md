@@ -11,8 +11,5 @@ Aplikasi ini bertujuan untuk menyimpan sebuah barang atau memantau barang yang m
 - Linux/MacOS/Android
   jalankan saja file `run.sh` maka file akan otomatis dieksekusi (Android gunakan termux)
 - Windows
-  jalankan dengan mengeksekusi file `run.bat` atau gunakan terminal
-  ```
-  javac -d out src\Barang.java src\Main.java
-  java -cp out src\Main
-  ```
+  jalankan dengan mengeksekusi file dengan code editor atau ide
+  (terdapat bug jika dijalankan melalui terminal)
