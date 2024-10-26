@@ -12,7 +12,7 @@ public class Main {
 
   public static void main(String[] args) {
     while (true) {
-      System.out.println("\n----- Aplikasi inventaris-----");
+      System.out.println("\n----- Menu Aplikasi inventaris -----");
       System.out.println("1. Tambah barang");
       System.out.println("2. Lihat semua barang");
       System.out.println("3. Update barang");
