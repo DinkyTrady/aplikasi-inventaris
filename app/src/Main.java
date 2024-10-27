@@ -12,13 +12,13 @@ public class Main {
 
   public static void main(String[] args) {
     while (true) {
-      System.out.println("\n----- Menu Aplikasi inventaris -----");
+      System.out.println("\n----- Aplikasi inventaris -----");
       System.out.println("1. Tambah barang");
       System.out.println("2. Lihat semua barang");
       System.out.println("3. Update barang");
       System.out.println("4. Hapus barang");
       System.out.println("5. Keluar");
-      System.out.print("Pilih Menu: ");
+      System.out.print("Pilih Menu : ");
       int pilih = input.nextInt();
       input.nextLine();
 
@@ -46,7 +46,7 @@ public class Main {
   };
 
   public static void tambahBarang() {
-    System.out.print("\nMasukan ID barang: ");
+    System.out.print("\nMasukan ID barang             : ");
     int id = input.nextInt();
     input.nextLine();
     for (Barang barang : inventaris) {
@@ -59,14 +59,14 @@ public class Main {
       }
     }
 
-    System.out.print("Masukan nama barang: ");
+    System.out.print("Masukan nama barang           : ");
     String namaBarang = input.nextLine();
-    System.out.print("Masukan jumlah barang: ");
+    System.out.print("Masukan jumlah barang         : ");
     int jumlahBarang = input.nextInt();
     input.nextLine();
-    System.out.print("Masukan deskripsi barang: ");
+    System.out.print("Masukan deskripsi barang      : ");
     String deskripsiBarang = input.nextLine();
-    System.out.print("Masukan nama penginput barang: ");
+    System.out.print("Masukan nama penginput barang : ");
     String namaPenginput = input.nextLine();
 
     LocalDateTime getDate = LocalDateTime.now();
@@ -91,16 +91,16 @@ public class Main {
   }
 
   public static void updateBarang() {
-    System.out.print("\nMasukan ID barang yang ingin diperbarui: ");
+    System.out.print("\nMasukan ID barang yang ingin diperbarui : ");
     int id = input.nextInt();
     for (Barang brg : inventaris) {
       if (id == brg.id) {
-        System.out.print("\nPerabarui jumlah barang: ");
+        System.out.print("Perabarui jumlah barang                 : ");
         brg.jumlahBarang = input.nextInt();
         input.nextLine();
-        System.out.print("Perbarui deskripsi barang: ");
+        System.out.print("Perbarui deskripsi barang               : ");
         brg.deskripsiBarang = input.nextLine();
-        System.out.print("Masukan nama anda: ");
+        System.out.print("Masukan nama pengupdate barang          : ");
         brg.namaPengupdate = input.nextLine();
         brg.dateUpdated = LocalDateTime.now().format(formatter);
 
@@ -115,7 +115,7 @@ public class Main {
   }
 
   public static void hapusBarang() {
-    System.out.print("\nMasukan ID barang yang ingin dihapus: ");
+    System.out.print("\nMasukan ID barang yang ingin dihapus : ");
     int id = input.nextInt();
     Boolean ketemu = false;
 
