@@ -6,6 +6,7 @@ import java.awt.*;
 import java.awt.event.*;
 import java.sql.*;
 
+@SuppressWarnings("unused")
 public class App {
     private JFrame frame;
     private JTextField txtNamaBarang;
@@ -33,7 +34,7 @@ public class App {
 
     private void initialize() {
         frame = new JFrame("Aplikasi Inventaris");
-        frame.setBounds(100, 100, 600, 400);
+        frame.setBounds(100, 100, 600, 900);
         frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         frame.getContentPane().setLayout(new BorderLayout());
 
@@ -58,7 +59,7 @@ public class App {
         txtHarga = new JTextField();
         panelInput.add(txtHarga);
 
-        panelInput.add(new JLabel("Keterangan:"));
+        panelInput.add(new JLabel("Deskripsi:"));
         txtKeterangan = new JTextArea(3, 20);
         panelInput.add(new JScrollPane(txtKeterangan));
 
@@ -81,7 +82,7 @@ public class App {
         panelTabel.setLayout(new BorderLayout());
 
         tableModel = new DefaultTableModel(
-                new String[] { "ID", "Nama Barang", "Kategori", "Jumlah", "Harga", "Keterangan" }, 0);
+                new String[] { "ID", "Nama Barang", "Kategori", "Jumlah", "Harga", "Deskripsi" }, 0);
         table = new JTable(tableModel);
         panelTabel.add(new JScrollPane(table), BorderLayout.CENTER);
 
