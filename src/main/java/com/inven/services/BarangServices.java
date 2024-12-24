@@ -85,10 +85,10 @@ public class BarangServices {
 
     private void isTableAdmin(boolean isAdmin) {
         if (!isAdmin) {
-            TableHelper.loadTable(true, false, "barang");
+            TableHelper.loadTable(true, "barang");
             return;
         }
-        TableHelper.loadTable(true, true, "barang");
+        TableHelper.loadTable(true, "barang");
         return;
     }
 }

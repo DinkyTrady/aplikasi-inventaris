@@ -31,7 +31,7 @@ public class UserServices {
                 stmt.executeUpdate();
                 JOptionPane.showMessageDialog(null, "User berhasil ditambahkan!");
                 frame.addNewUser.dispose();
-                TableHelper.loadTable(false, true, "users");
+                TableHelper.loadTable(false, "users");
                 stmt.close();
             }
         } catch (SQLException e) {
@@ -57,7 +57,7 @@ public class UserServices {
             if (rowsUpdated > 0) {
                 JOptionPane.showMessageDialog(null, "User berhasil diupdate!");
                 frame.editUserFrame.dispose();
-                TableHelper.loadTable(false, true, "users");
+                TableHelper.loadTable(false, "users");
             }
             stmt.close();
         } catch (SQLException e) {
@@ -73,7 +73,7 @@ public class UserServices {
 
             stmt.setInt(1, id);
             stmt.executeUpdate();
-            TableHelper.loadTable(false, true, "users");
+            TableHelper.loadTable(false, "users");
             stmt.close();
         } catch (SQLException e) {
             // TODO: handle exception

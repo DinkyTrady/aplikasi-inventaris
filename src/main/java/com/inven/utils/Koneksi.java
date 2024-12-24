@@ -21,7 +21,6 @@ public class Koneksi {
         try {
             Driver mysqlDriver = new com.mysql.cj.jdbc.Driver();
             DriverManager.registerDriver(mysqlDriver);
-            System.out.println("Driver succesfully connected");
         } catch (Exception e) {
             // TODO: Handling exception
             e.printStackTrace();

@@ -644,12 +644,11 @@ public class BarangController extends javax.swing.JFrame {
             };
         });
 
-        TableHelper.loadTable(true, roleUser(), "barang");
+        TableHelper.loadTable(true, "barang");
     }// GEN-LAST:event_formWindowOpened
 
     private boolean roleUser() {
         boolean isAdmin;
-        System.out.println(User.getRoleUser());
         if (User.getRoleUser() == "admin") {
             isAdmin = true;
         } else {

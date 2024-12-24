@@ -593,7 +593,7 @@ public class AdminUserController extends javax.swing.JFrame {
             };
         });
 
-        TableHelper.loadTable(false, true, "users");
+        TableHelper.loadTable(false, "users");
     }// GEN-LAST:event_formWindowOpened
 
     private void tambahUserActionPerformed(java.awt.event.ActionEvent evt) {// GEN-FIRST:event_AddUserActionPerformed
@@ -617,7 +617,7 @@ public class AdminUserController extends javax.swing.JFrame {
 
     private void backButtonActionPerformed(java.awt.event.ActionEvent evt) {// GEN-FIRST:event_backButtonActionPerformed
         // TODO add your handling code here:
-        TableHelper.loadTable(false, true, "users");
+        TableHelper.loadTable(false, "users");
         dispose();
         new AdminDashboard().setVisible(true);
     }// GEN-LAST:event_backButtonActionPerformed

@@ -15,9 +15,8 @@ public class TableHelper {
 
     private static DefaultTableModel tableContainer = new DefaultTableModel();
 
-    public static void loadTable(boolean isBarang, boolean admin, String table) {
+    public static void loadTable(boolean isBarang, String table) {
         boolean isAdmin = User.getRoleUser() == "admin" ? true : false;
-        System.out.println(isAdmin);
         resetTable(isBarang, isAdmin);
 
         try (Connection conn = Koneksi.getConnection()) {
