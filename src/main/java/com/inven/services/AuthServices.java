@@ -10,7 +10,6 @@ import javax.swing.JOptionPane;
 import com.inven.controller.BarangController;
 import com.inven.gui.AdminDashboard;
 import com.inven.gui.Login;
-import com.inven.gui.UserPanel;
 import com.inven.models.User;
 import com.inven.utils.Koneksi;
 
