@@ -28,4 +28,4 @@ insert into barang (nama_barang, kategori, jumlah, keterangan) values
 -- Insert users
 insert into users (username, password, role) values
 ('admin', 'admin123', 'admin'),
-('giga', 'sigmamew123', 'user');
+('hafizh', 'hfzp123', 'user');
