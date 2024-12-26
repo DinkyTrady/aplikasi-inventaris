@@ -1,2 +1,2 @@
-out/*
+# ignore compile directory
 /target/
