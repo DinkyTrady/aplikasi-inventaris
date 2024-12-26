@@ -29,7 +29,7 @@ beberapa tools yang diperlukan (pastikan tools telah terinstall pada sistem kali
      # masuk ke mysql
      mysql -u root
      # source file sql
-     \. src/assets/db/db_gudang.sql
+     \. assets/db/db_gudang.sql
      # exit mysql
      exit;
      ```
