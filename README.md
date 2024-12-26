@@ -1,5 +1,7 @@
 # Aplikasi Inventaris
 
+> [!WARNING] `Legacy branch`
+
 Aplikasi ini bertujuan untuk menyimpan sebuah barang atau memantau barang yang masuk
 
 > [!WARNING]
