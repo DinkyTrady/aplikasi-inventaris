@@ -89,13 +89,6 @@ public class TableHelper {
         return rowData;
     }
 
-    public static void isEmpty(String username, String passwd) {
-        if (username.isEmpty() || passwd.isEmpty()) {
-            JOptionPane.showMessageDialog(null, "Semua field wajib diisi!");
-            return;
-        }
-    }
-
     public static DefaultTableModel getTableModel() {
         return tableContainer;
     }

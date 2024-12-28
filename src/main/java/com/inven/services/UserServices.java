@@ -19,7 +19,9 @@ public class UserServices {
     }
 
     public void addNewUser(String username, String passwd, String role, AdminUserController frame) {
-        TableHelper.isEmpty(username, passwd);
+        if (isEmpty(username, passwd)) {
+            return;
+        }
 
         try (Connection conn = Koneksi.getConnection()) {
             query = "INSERT INTO users (username, password, role) VALUES (?, ?, ?)";
@@ -42,7 +44,9 @@ public class UserServices {
 
     // untuk mengupdate user
     public void updateUser(String username, String passwd, String role, int id, AdminUserController frame) {
-        TableHelper.isEmpty(username, passwd);
+        if (isEmpty(username, passwd)) {
+            return;
+        }
 
         try (Connection conn = Koneksi.getConnection()) {
             query = "UPDATE users SET username=?, password=?, role=? WHERE id=?";
@@ -79,5 +83,13 @@ public class UserServices {
             // TODO: handle exception
             errMsg(e);
         }
+    }
+
+    private static boolean isEmpty(String username, String passwd) {
+        if (username.isEmpty() || passwd.isEmpty()) {
+            JOptionPane.showMessageDialog(null, "Semua field wajib diisi!");
+            return true;
+        }
+        return false;
     }
 }

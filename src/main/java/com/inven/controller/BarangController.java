@@ -620,7 +620,7 @@ public class BarangController extends javax.swing.JFrame {
         // TODO add your handling code here:
         String namaBarang = namaField.getText();
         String kategoriBarang = kategoriField.getText();
-        int jumlahBarang = Integer.parseInt(jumlahField.getText());
+        String jumlahBarang = jumlahField.getText();
         String keteranganBarang = keteranganField.getText();
 
         new BarangServices().tambahBarang(roleUser(), namaBarang, kategoriBarang, jumlahBarang, keteranganBarang, this);
@@ -638,7 +638,7 @@ public class BarangController extends javax.swing.JFrame {
         int barangId = (int) userTable.getValueAt(selectedRow, 0);
         String namaBarang = editNamaField.getText();
         String kategoriBarang = editKategoriField.getText();
-        int jumlahBarang = Integer.parseInt(editJumlahField.getText());
+        String jumlahBarang = editJumlahField.getText();
         String keteranganBarang = editKeteranganField.getText();
 
         new BarangServices().editBarang(roleUser(), namaBarang, kategoriBarang, jumlahBarang, keteranganBarang,
