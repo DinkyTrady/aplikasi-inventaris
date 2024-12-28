@@ -624,6 +624,11 @@ public class BarangController extends javax.swing.JFrame {
         String keteranganBarang = keteranganField.getText();
 
         new BarangServices().tambahBarang(roleUser(), namaBarang, kategoriBarang, jumlahBarang, keteranganBarang, this);
+
+        namaField.setText("");
+        kategoriField.setText("");
+        jumlahField.setText("");
+        keteranganField.setText("");
     }// GEN-LAST:event_buttonClick1ActionPerformed
 
     private void editButtonClickActionPerformed(java.awt.event.ActionEvent evt) {// GEN-FIRST:event_buttonClickActionPerformed
