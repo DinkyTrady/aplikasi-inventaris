@@ -21,7 +21,7 @@ create table if not exists users (
     role enum('user', 'admin') not null
 );
 
---Insert default Barang
+-- Insert default Barang
 insert into barang (nama_barang, kategori, jumlah, keterangan) values 
   ('Tempe', 'Sandang Pangan', 2, "Tempe terbaik yang kumiliki");
 

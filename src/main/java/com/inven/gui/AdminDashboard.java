@@ -7,10 +7,6 @@ package com.inven.gui;
 import com.inven.controller.AdminUserController;
 import com.inven.controller.BarangController;
 
-import java.sql.SQLException;
-
-import javax.swing.JOptionPane;
-
 import com.inven.models.*;
 import com.inven.utils.Koneksi;
 
