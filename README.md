@@ -3,7 +3,12 @@
 Aplikasi ini bertujuan untuk menyimpan sebuah barang atau memantau barang yang masuk
 
 > [!WARNING]
-> Pastikan sebelum menjalankan file script untuk berada di folder projek ini!
+> This repository archived because it will move to another repository
+
+check the new repository [Warehouse-Apps](https://github.com/DinkyTrady/Warehouse-App)
+
+<!-- > [!WARNING] -->
+<!-- > Pastikan sebelum menjalankan file script untuk berada di folder projek ini! -->
 
 ## Cara Menajalankan Code Java pada projek ini
 
